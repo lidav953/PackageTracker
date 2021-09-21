@@ -20,12 +20,12 @@ public class myPackage {
 
     private String assignCarrier() {
         // assign carrier based on rules
-        if(_isFedEx()) {
-            return "FedEx";
+        if(_isUSPS()) {
+            return "USPS";
         } else if(_isUPS()) {
             return "UPS";
-        } else if(_isUSPS()) {
-            return "USPS";
+        } else if(_isFedEx()) {
+            return "FedEx";
         }
         return "N/A";
     }
